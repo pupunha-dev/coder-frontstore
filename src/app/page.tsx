@@ -1,9 +1,10 @@
+import Pagina from "@/components/template/Pagina";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hey</h1>
-    </main>
+    <Pagina>
+      <div>Início</div>
+    </Pagina>
   );
 }
