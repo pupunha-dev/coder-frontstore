@@ -7,12 +7,14 @@ import produtos from "@/data/constants/produtos";
 import useCarrinho from "@/data/hooks/useCarrimho";
 
 export default function Home() {
-  const { nome } = useCarrinho()
+  const { } = useCarrinho()
   return (
     <Pagina>
-      {produtos.map((produto) => (
-        <CardProduto key={produto.id} produto={produto}/>
-      ))}
+      <div className="flex gap-5 justify-center flex-wrap">
+        {produtos.map((produto) => (
+          <CardProduto key={produto.id} produto={produto}/>
+        ))}
+      </div>
     </Pagina>
   );
 }
