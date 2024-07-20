@@ -2,6 +2,7 @@ import { IconShoppingCart } from "@tabler/icons-react"
 import Link from "next/link"
 
 export const Carrinho = () => {
+  
   return (
     <Link href="/carrinho">
       <div className="flex relative">
